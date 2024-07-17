@@ -56,7 +56,7 @@ long long maxScore(vector<int>& v1, vector<int>& v2, int k) {
             pq.pop();
         }
         if(pq.size() == k){
-            ans = max(ans, curr * mul);
+            ans = max(ans, curr + k * mul);
         }
     }
     return ans;
